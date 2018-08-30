@@ -31,8 +31,8 @@ public class ConcurrentTest {
             b--;
         }
 
-        long time = System.currentTimeMillis() - start;
         thread1.join();
+        long time = System.currentTimeMillis() - start;
         System.out.println("currency:" + time + "ms, b= " + b);
     }
 
