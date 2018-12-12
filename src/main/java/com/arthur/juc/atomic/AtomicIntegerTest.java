@@ -1,10 +1,11 @@
-package com.arthur.juc;
+package com.arthur.juc.atomic;
 
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by xusheng on 2018/12/11.
