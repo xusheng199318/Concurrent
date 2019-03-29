@@ -14,6 +14,8 @@ public class ThreadPoolTest {
 
         TimeUnit.SECONDS.sleep(5);
         pool.shutdown();
+        pool.removeWorker(5);
+
         System.out.println("stop");
 
     }
