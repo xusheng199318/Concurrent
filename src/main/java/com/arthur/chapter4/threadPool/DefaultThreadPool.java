@@ -102,7 +102,7 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
         @Override
         public void run() {
             while (running) {
-                Job job = null;
+                Job job;
                 synchronized (jobs) {
                     while (jobs.isEmpty()) {
                         try {
